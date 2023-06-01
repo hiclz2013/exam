@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*
+	주어진 과목번호를 통해 강의실 번호를 출력하는 프로그램을 작성하세요(브라우저에 출력)
+ 	과목 code값이 1이면 “R101호”
+                  2이면 “R202호”
+                  3이면 “R303호”
+                  4이면 “R404호”
+                  나머지는 “상담원에게 문의하세요”
+	
+    */
+    
+    var code = prompt("과목번호를 입력하세요");
+    console.log(typeof code);
+	
+    switch (code) {
+    	case "1":
+    		console.log("101호");
+    		document.write("<p>101호</p>");
+    		break;
+    	case "2":
+    		console.log("202호");
+    		document.write("<p>202호</p>");
+    		break;
+    	case "3":
+    		console.log("303호");
+    		document.write("<p>303호</p>");
+    		break;
+    	case "4":
+    		console.log("404호");
+    		document.write("<p>404호</p>");
+    		break;
+    	default :
+    		console.log("상담원");
+			document.write("<p>상담원</p>");
+			break;
+    }
+    
+    
+	</script>
+	
+
+</body>
+</html>
